@@ -24,7 +24,7 @@ def new_transaction():
 
     for field in req_fields:
         if not tx_data.get(field):
-            return "Invalid trannsaction data", 400
+            return "Invalid transaction data", 400
 
     tx_data["timestamp"] = time.time()
 
